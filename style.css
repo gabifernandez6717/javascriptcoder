@@ -1,0 +1,9 @@
+body{
+    background-color: blue;}
+div{padding-inline-end: 0%;}
+p{
+    color: red;
+    background-color: black;
+    text-align: center;
+    border-radius: 20px;
+}
