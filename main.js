@@ -139,7 +139,7 @@ alert('el subtotal es '+ subtotal)*/
 //inicio
 alert('Hola! bienvenido a calculadora coder')
 //variables
-let operacion =prompt ( 'Que desea calcular? 1-suma, 2-resta, 3-multiplicacion 4-division 5-salir')
+let operacion =prompt ( 'ingrese el numero asignado a la operacion que desea efectuar: 1-suma, 2-resta, 3-multiplicacion 4-division 5-salir')
 let resultado=0
 let verificador=true
 let salir=false
@@ -153,28 +153,28 @@ do {
     if (operacion=== 1||2||3||4) {
         if (operacion ==='1') {resultado=sumar()
             alert('el resultado es '+ resultado)
-            operacion =prompt ( 'Que desea calcular? 1-suma, 2-resta, 3-multiplicacion 4-division 5-salir')
+            operacion =prompt ( 'ingrese el numero asignado a la operacion que desea efectuar: 1-suma, 2-resta, 3-multiplicacion 4-division 5-salir')
     }
         if (operacion==='2') {resultado=restar()
             alert('el resultado es '+ resultado)
-            operacion =prompt ( 'Que desea calcular? 1-suma, 2-resta, 3-multiplicacion 4-division 5-salir')
+            operacion =prompt ( 'ingrese el numero asignado a la operacion que desea efectuar: 1-suma, 2-resta, 3-multiplicacion 4-division 5-salir')
         }
         if (operacion==='3') {resultado=multiplicar()
             alert('el resultado es '+ resultado)
-            operacion =prompt ( 'Que desea calcular? 1-suma, 2-resta, 3-multiplicacion 4-division 5-salir')
+            operacion =prompt ( 'ingrese el numero asignado a la operacion que desea efectuar: 1-suma, 2-resta, 3-multiplicacion 4-division 5-salir')
         }
         if (operacion==='4') {resultado=dividir()
             alert('el resultado es '+ resultado)
-            operacion =prompt ( 'Que desea calcular? 1-suma, 2-resta, 3-multiplicacion 4-division 5-salir')
+            operacion =prompt ( 'ingrese el numero asignado a la operacion que desea efectuar: 1-suma, 2-resta, 3-multiplicacion 4-division 5-salir')
         }
     }
     if (operacion !== 1||2||3||4) {
-        salir=prompt('desea salir?')
+        salir=promp('desea salir?'.toLowerCase())
         if(salir==='si'){
             alert('hasta pronto')
             break}
         if (salir==='no') {
-            operacion=prompt ( 'Que desea calcular? 1-suma, 2-resta, 3-multiplicacion 4-division 5-salir')
+            operacion=prompt ( 'ingrese el numero asignado a la operacion que desea efectuar: 1-suma, 2-resta, 3-multiplicacion 4-division 5-salir')
 }}}
 while (operacion !== 1||2||3||4||'')
 
