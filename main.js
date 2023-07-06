@@ -10,22 +10,43 @@ const dividir= (a,b)=> Number(prompt('ingrese el dividendo'))/Number(prompt('ing
 do {
     //variables
     let operacion =prompt ( 'ingrese el numero asignado a la operacion que desea efectuar:  1-suma, 2-resta, 3-multiplicacion 4-division')
+    while (operacion!== '1'||'2'|| '3'||'4') {
+        alert ('ingrese un numero valido')
+        operacion=prompt ('ingrese el numero asignado a la operacion que desea efectuar:  1-suma, 2-resta, 3-multiplicacion 4-division')
+        break
+    }
     let resultado=0
     switch (operacion) {
         case '1':
             resultado=sumar()
+            while(Number.isNaN(resultado)){
+                alert('debe ingresar un numero en ambos miembros de la operacion')
+                resultado=sumar()
+            }
             alert('El resultado de su operacion es '+resultado)
             break;
         case '2':
             resultado=restar()
+            while(Number.isNaN(resultado)){
+                alert('debe ingresar un numero en ambos miembros de la operacion')
+                resultado=sumar()
+            }
             alert('El resultado de su operacion es '+resultado)
             break;
         case '3':
             resultado=multiplicar()
+            while(Number.isNaN(resultado)){
+                alert('debe ingresar un numero en ambos miembros de la operacion')
+                resultado=sumar()
+            }
             alert('El resultado de su operacion es '+resultado)
             break;
         case '4':
             resultado=dividir()
+            while(Number.isNaN(resultado)){
+                alert('debe ingresar un numero en ambos miembros de la operacion')
+                resultado=sumar()
+            }
             alert('El resultado de su operacion es '+resultado)
             break;
         default:
