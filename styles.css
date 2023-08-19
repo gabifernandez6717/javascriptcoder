@@ -1,3 +1,82 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.navbar-brand{
+    display: flex;
+    justify-content: center;
+}
+.navbar-brand img {
+    display: grid;
+}
+.navbar-brand h1{
+font-size: 20px;
+display: grid;
+}
+/* Estilos para el formulario */
+.formulario {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+form {
+    display: grid;
+    gap: 15px;
+}
+label {
+    font-weight: bold;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #0d6efd;
+}
+#clientesSatisfechos {
+    list-style: none;
+    padding: 0;
+    }
+    #clientesSatisfechos li {
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    color: #333;
+}
 .carritoCompras  {
     width: 40px;
     height: 40px;
@@ -6,6 +85,73 @@
     width: 40px;
     height: 40px;
 }
+.contenedor{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 500px 500px 500px;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 8% auto;
+    background-color: #0056b3;
+}
 .card{
-    margin: 35%;
+    width: 250px;
+    height: 350px;
+    border: 2px solid black;
+    margin: 10px;
+}
+.c1 .card-img-top,
+.c2 .card-img-top,
+.c3 .card-img-top,
+.c4 .card-img-top,
+.c5 .card-img-top {
+    width: 146px;
+    height: 167px;
+    margin: auto;
+    padding: 10px;
+}
+.c5 .card-body{
+    padding: 4rem 1rem 1rem 1rem;
+}
+.c4 .card-body{
+    padding: 4rem 1rem 1rem 1rem;
+}
+.c6 {
+    grid-column: 1/4 ;
+    width: 100% ;
+}
+.c6 h2{
+    font-size: 20px;
+    padding: 20px;
+}
+.form{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.c7{
+    background-color: #fff;
+    width: 250px;
+    height:350px;
+    margin: 10px;
+    border: 2px solid black;
+}
+.c7 .clientes {
+    padding:  15px 15px 5px 15px;
+    font-size: 20px;
+    margin: 0;
+}
+.c7 .listaClientes li{
+    border-radius: 6px solid black;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.c7 .listaClientes{
+    height: 200px;
+}
+.container{
+    background-color: #0056b3;
+}
+.text-muted p{
+    color: black;
 }
