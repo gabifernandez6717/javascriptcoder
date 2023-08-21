@@ -121,17 +121,3 @@ fetch('https://jsonplaceholder.typicode.com/users')
     })
     console.log('Error al obtener datos:', error)
     })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
